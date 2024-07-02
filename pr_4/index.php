@@ -133,7 +133,7 @@ else
     {
         global $errors, $messages, $values;
         $errors[$str] = !empty($pole);
-        $messages[$str] = "<div class=\"error\">$pole</div>";
+        $messages[$str] = "<div class=\"messageError\">$pole</div>";
         $values[$str] = empty($_COOKIE[$str.'_value']) ? '' : $_COOKIE[$str.'_value'];
         setcookie($str.'_error', '', time() - 30 * 24 * 60 * 60);
         return;
