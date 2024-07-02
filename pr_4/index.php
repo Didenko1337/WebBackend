@@ -46,7 +46,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
         check_pole('birthday', 'Неправильная дата', strtotime('now') < strtotime($birthday));
     check_pole('gender', "Не выбран пол", empty($gender) || !preg_match('/^(male|female)$/', $gender));
     if(!check_pole('biography', 'Это поле пустое', empty($biography)))
-        check_pole('biography', 'Слишком длинное поле, максимум символов - 65535', strlen($biography) > 65535);
+        check_pole('biography', 'Слишком длинное поле', strlen($biography) > 65535);
     check_pole('accept', 'Не ознакомлены с контрактом', empty($accept));
 
     include('db.php');
