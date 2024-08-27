@@ -1,0 +1,143 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #00002e;
+    color: #ddd;
+}
+*{
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 0;
+}
+
+.pform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 900px;
+    overflow: auto;
+    background: #0a0a0a;
+    float: right;
+    padding: 10px;
+}
+
+.pformAuth > form > div{
+    margin: 20px 0;
+}
+
+form{
+    width: 400px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: auto;
+    position: relative;
+}
+form h3{
+    text-align: center;
+    font-weight: normal;
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+form input{
+    font-size: 16px;
+}
+form input,
+form textarea,
+form select{
+    outline: none;
+    border: 2px #aaa solid;
+    border-radius: 3px;
+    padding: 3px 6px;
+    background: unset;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: 0.3s;
+    color: #ddd;
+}
+form input:focus,
+form textarea:focus,
+form select:focus{
+    border-color: #fff;
+}
+.w100{
+    width: 100%;
+}
+.oznak_element{
+    margin-top: 6px;
+    margin-bottom: 30px;
+}
+form > div{
+    margin-top: 20px;
+}
+form .gender_left label{
+    margin-left: 10px;
+}
+form textarea{
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    font-size: 16px;
+}
+form button,
+.logout_form{
+    align-items: center;
+    border-radius: 90px;
+    border: none;
+    font-weight: 500;
+    background: #0066de;
+    color: #fff;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    padding: 10px 35px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.logout_form{
+    background: none !important;
+}
+form button:active{
+    filter: brightness(120%);
+}
+.logout_form,
+.login_form{
+    width: unset;
+    color: brown !important;
+    padding: unset;
+    height: unset;
+    margin-top: 20px;
+    display: inline-block;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+.login_form{
+    color: #fff !important;
+}
+.message{
+    font-size: 21px;
+    color: green;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.messageError{
+    color: #d70000;
+    font-size: 15px;
+}
+.border_error{
+    border-color: #d70000;
+}
+.color_error{
+    color: #d70000;
+}
+.message_info{
+    color: orange !important;
+}
+
+.editBut{
+    background: orange !important;
+}
